@@ -1,0 +1,34 @@
+{
+    "name": "lonelythinker/yii2-authclient",
+    "description": "Yii2 authclient extension",
+    "keywords": ["lonelythinker", "yii2", "extension", "authclient", "QQ Auth", "Wechat Auth", "Weibo Auth", "plugin"],
+    "homepage": "https://github.com/lonelythinker/yii2-authclient",
+    "type": "yii2-extension",
+    "license": "BSD 3-Clause",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "lonelythinker",
+            "email": "710366112@qq.com",
+            "homepage": "http://www.lonelythinker.cn/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+		"yiisoft/yii2-authclient": "*"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "autoload": {
+        "psr-4": {
+            "lonelythinker\\yii2\\authclient\\": ""
+        }
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
