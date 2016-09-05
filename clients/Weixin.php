@@ -1,6 +1,6 @@
 <?php
 
-namespace lonelythinker\yii2\authclient;
+namespace lonelythinker\yii2\authclient\clients;
 
 use yii\authclient\OAuth2;
 use yii\web\HttpException;
