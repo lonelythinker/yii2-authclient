@@ -64,16 +64,16 @@ class Weibo extends OAuth2
      * @inheritdoc
      */
     protected function initUserAttributes()
-	{
+    {
         $openid = $this->api('oauth2/get_token_info', 'POST');
-		return $this->api("2/users/show.json", 'GET', ['uid' => $openid['uid']]);
+        return $this->api("2/users/show.json", 'GET', ['uid' => $openid['uid']]);
     }
 
     /**
      * @inheritdoc
      */
     protected function defaultName()
-	{
+    {
         return 'weibo';
     }
 
@@ -81,19 +81,18 @@ class Weibo extends OAuth2
      * @inheritdoc
      */
     protected function defaultTitle()
-	{
-        return '����';
+    {
+        return 'Weibo';
     }
 
     /**
      * @inheritdoc
      */
     protected function defaultViewOptions()
-	{
+    {
         return [
             'popupWidth' => 800,
             'popupHeight' => 500,
         ];
     }
-
 }
