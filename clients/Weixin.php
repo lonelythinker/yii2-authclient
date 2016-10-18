@@ -100,7 +100,7 @@ class Weixin extends OAuth2
             $defaultParams['scope'] = $this->scope;
         }
         $defaultParams['state'] = $authState;
-        $url = $this->type == 'mp'?$this->authUrlMp:$this->authUrl;
+        $url = $this->type == 'mp' ? $this->authUrlMp : $this->authUrl;
         return $this->composeUrl($url, array_merge($defaultParams, $params));
     }
     /**
